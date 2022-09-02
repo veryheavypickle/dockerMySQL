@@ -47,7 +47,7 @@ def executeSQL(command, parameters=(), use=True):
 
 if __name__ == '__main__':
     config = {
-        "host": "localhost",
+        "host": "default",
         "user": "root",
         "password": "cumcumcum"
     }
