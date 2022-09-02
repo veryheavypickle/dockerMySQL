@@ -47,7 +47,7 @@ def executeSQL(command, parameters=(), use=True):
 
 if __name__ == '__main__':
     config = {
-        "host": "default",
+        "host": "telegramBot-mysql",
         "user": "root",
         "password": "cumcumcum"
     }
