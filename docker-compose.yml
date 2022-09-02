@@ -18,6 +18,7 @@ services:
     depends_on:
       - mysql_db
     container_name: bot
+    command: tail -f /dev/null
     networks:
       - default
 
