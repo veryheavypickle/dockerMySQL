@@ -1,7 +1,13 @@
 import mysql.connector
+import os
 
 
 def main():
+    try:
+        print(os.environ["MYSQL_ROOT_PASSWORD"])
+    except KeyError as e:
+        print("Environment variables not found")
+        print(e)
     if not {"Database": dbName} in executeSQL("SHOW DATABASES", use=False):
         createDB()
 
@@ -43,7 +49,7 @@ if __name__ == '__main__':
     config = {
         "host": "localhost",
         "user": "root",
-        "password": "nwJ8zkS@4psZpPLXxZmzA7XVxGFxkS8s"
+        "password": "cumcumcum"
     }
     dbName = "testDB"
     main()
