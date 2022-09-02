@@ -11,7 +11,7 @@ def createDB():
     executeSQL("""
     CREATE TABLE IF NOT EXISTS customers (
     id VARCHAR(15) PRIMARY KEY,
-    coolData VARCHAR(30) NOT NULL,) engine=InnoDB;
+    coolData VARCHAR(30) NOT NULL) engine=InnoDB;
     """)
 
 
@@ -43,7 +43,7 @@ if __name__ == '__main__':
     config = {
         "host": "localhost",
         "user": "root",
-        "password": "root"
+        "password": "nwJ8zkS@4psZpPLXxZmzA7XVxGFxkS8s"
     }
     dbName = "testDB"
     main()
